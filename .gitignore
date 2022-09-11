@@ -1,0 +1,11 @@
+# ignore all .a files
+*.a
+*.txt
+
+# ignore all files in any directory named build
+docs/
+etc/
+lambda/
+pip/
+python/
+
