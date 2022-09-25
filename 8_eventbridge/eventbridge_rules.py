@@ -1,6 +1,4 @@
 # Program for listing EventBridge rules with a specific name
-from multiprocessing.sharedctypes import Value
-from unittest import result
 import boto3
 import re
 import json
