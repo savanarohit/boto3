@@ -8,7 +8,7 @@ import boto3
 # def lambda_handler(event, context):
 ssm_client = boto3.client('ssm')
 response = ssm_client.send_command(
-    InstanceIds=['i-0d55cdb9e4251c405'],
+    InstanceIds=['i-0155cdb9e1251c405'],
     DocumentName="AWS-RunShellScript",
     Parameters={
         'commands': ['PID=$(sudo pgrep java) && sudo -u tomcat jstack -l $PID > /tmp/thread.txt']
